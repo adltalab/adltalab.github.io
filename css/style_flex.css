@@ -1,0 +1,107 @@
+*{
+  box-sizing: border-box;
+}
+
+
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* width: 100vw; */
+  margin: 0;
+}
+
+/* Main flex column- Top section [header] */
+header{
+  background: #80CBC4;
+  height: 10vh;
+}
+
+/* Main flex column- MId section [Main] */
+/* Main flex Row - define */
+.main{
+  display: flex; 
+} 
+
+/* Main flex Row - Left */
+.left-side{
+  flex: .2;
+  background-image: url("https://picsum.photos/id/238/150/750");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  text-align: center;
+  color: white;
+  background-blend-mode: multiply;
+  background-color: #194e49;
+  padding: 2em;
+}
+
+.left-side ul {
+  list-style-type:none;
+}
+
+.left-side ul li {
+  display: block;
+}
+
+/* Main flex Row - Mid */
+article{  
+  flex: 4;
+  background: #ffd54f;
+  min-height: 80vh;
+  padding: 5px;
+} 
+
+.gallery h3{
+  text-align: center;
+  border: 1px solid white;
+}
+
+.gallery_list{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: stretch;
+  justify-content: space-between;
+  
+}
+
+.img{
+  padding: 0.1em;
+  margin: 0.1em;
+  border: .1em solid black ;
+}
+
+/* Main flex Row - Right */
+/* flex_B define*/
+aside{
+  flex: 3;
+  background: #FFF176;
+  text-align: center;
+}
+
+/* flex_B box-list in aside */
+.box_list{
+  display: flex;
+  flex: row;
+  flex-wrap: wrap;
+  
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.box{
+  width: 160px;
+  height: 100px;
+  margin: .2em;
+  text-align: center;
+  border: 1px solid rgb(199, 42, 42);
+  background-image: url(https://picsum.photos/id/238/300/150);
+}
+
+/* Main flex column- Bottom section [footer] */
+footer{
+  height: 10vh;
+  background: #26A69A;
+}
